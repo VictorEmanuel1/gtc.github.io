@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+    <link rel="stylesheet" type="text/css "href="cadastro.css">
+    <script src="cadastro.js"></script>
+</head>
+    	<body>
+    
+            <header>
+
+                <div class="texto_cadastro">
+              
+                        
+        
+                </div>
+
+            </header>
+
+                    <main>
+
+                        <div class="tela">
+
+                                <div class="randomimg">
+                                        
+                                        <img src="imagens/Duartech.png" width="500" height="500">
+
+                                </div>
+
+                                <form id="form1" onsubmit="enviarForm1(event)">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" name="nome" required>
+                                        
+                                        <label for="email">E-mail:</label>
+                                        <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Insira um endereço de email válido" required>
+                                        
+                                        <label for="senha">Senha:</label>
+                                        <input type="password" name="senha" pattern=".{8,}" title="A senha deve ter pelo menos 8 caracteres" required>
+                                        
+                                        <input type="submit" value="Enviar">
+                                </form>
+                                      
+                                <form id="form2" class="hidden">
+                                        <!-- Perfil para indicar os usuarios -->
+
+                                        <ul class="options">
+                                                
+                                                <p class="paragrafo"> 1- Selecione o seu perfil de investimento:</p><br>
+                                                
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="agressivo" name="perfil" value="Agressivo" class="option">
+                                                                <label class="label_option" for="agressivo">Agressivo</label>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="ousado" name="perfil" value="Ousado" class="option">
+                                                                <label class="label_option" for="ousado">Ousado</label>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="intermediario" name="perfil" value="Intermediário" class="option">
+                                                                <label class="label_option" for="intermediario">Intermediário</label>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="conservador" name="perfil" value="Conservador" class="option">
+                                                                <label class="label_option" for="conservador">Conservador</label>
+                                                        </li>
+
+                                        
+                                                <!-- Por quanto tempo você deseja investir? -->
+
+                                                <br><br><p class="paragrafo"> 2- Por quanto tempo você deseja investir?</p><br>
+                                                
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="curto-prazo" name="tempoInvestimento" value="Curto prazo" class="option">
+                                                                <label for="curto-prazo">Curto prazo</label><br>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="medio-prazo" name="tempoInvestimento" value="Médio prazo" class="option">
+                                                                <label for="medio-prazo">Médio prazo</label><br>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="longo-prazo" name="tempoInvestimento" value="Longo prazo" class="option">
+                                                                <label for="longo-prazo">Longo prazo</label><br>
+                                                        </li>
+
+                                        
+
+                                                <!-- Por quanto tempo você deseja investir? -->
+
+                                                <br><br><p class="paragrafo"> 3- Qual é o seu objetivo ao investir?</p><br>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="aposentadoria" name="objetivo" value="Aposentadoria" class="option">
+                                                                <label for="aposentadoria">Aposentadoria</label>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="compra-imovel" name="objetivo" value="Compra de imóvel" class="option">
+                                                                <label for="compra-imovel">Compra de imóvel</label>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="educacao" name="objetivo" value="Educação" class="option">
+                                                                <label for="educacao">Educação</label>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="viagem" name="objetivo" value="Viagem" class="option">
+                                                                <label for="viagem">Viagem</label>
+                                                        </li>
+
+                                                        <input type="checkbox" id="outros" name="objetivo" value="Outros" class="option">
+                                                        <label for="outros">Outros:</label>
+                                                        <input type="text" id="outros-input" name=" outros-input" class="outros-input" disabled>
+
+                                                <!-- Qual é a sua tolerância a riscos? -->
+                                            
+                                                
+                                                <br><br><p class="paragrafo">4- Qual é a sua tolerância a riscos?</p><br> 
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="baixa" name="toleranciaRiscos" value="Baixa" class="option" >
+                                                                <label for="baixa">Baixa</label>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="moderada" name="toleranciaRiscos" value="Moderada" class="option">
+                                                                <label for="moderada">Moderada</label>
+                                                        </li>
+
+                                                        <li class="teste">
+                                                                <input type="checkbox" id="alta" name="toleranciaRiscos" value="Alta" class="option">
+                                                                <label for="alta">Alta</label>
+
+                                                        </li>
+
+                                                        <input type="submit" value="Enviar">
+
+                                        </ul>
+
+
+                                </form>
+                                      
+                        </div> 
+
+
+                    </main>
+
+            <footer>
+    
+            </footer>
+
+
+    </body>
+</html>

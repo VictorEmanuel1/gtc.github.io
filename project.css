@@ -1,0 +1,254 @@
+*{
+
+    margin: 0;
+    padding: auto;
+
+}header {
+
+    background-color: rgb(0, 0, 0);
+    width:auto;  /* Define a largura do cabeçalho */
+    height: 0px;   /* Dedine a altura do cabeçalho */
+    position: relative; /* A propriedade position, encontrada no CSS, define como um elemento pode ser posicionado (renderizado) no documento (página). */
+    
+}body {
+  background-position: center top -250px;
+  background-image: url(imagens/fundo_tela_inicial.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  overflow-x: hidden;
+}
+.LOGOCAB{
+
+position: relative;  /* A propriedade position, encontrada no CSS, define como um elemento pode ser posicionado (renderizado)o documento (página) n. */
+top: -60px; 
+
+}.BARRAPESQ{
+
+display: flex;
+justify-content: center;
+
+}.btn{
+
+  font-family: monospace;
+  position: relative;
+  padding: 10px 8px;
+  width: 120px;
+  color: rgb(0,0,0);
+  background: rgb(197, 187, 187);
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  right: -450px;
+  top: -258px;
+
+}.btn:hover{
+
+  background: rgb(9, 243, 114);
+  transition: background 1s;
+
+}.btn2{
+
+  font-family: monospace;
+  position: relative;
+  padding: 10px 8px;
+  width: 120px;
+  color: rgb(0,0,0);
+  background: rgb(197, 187, 187);
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  right: -610px;
+  top: -294px;
+
+}.btn2:hover{
+
+  background: rgb(9, 243, 114);
+  transition: background 1s;
+
+}.btn3{
+
+  font-family: monospace;
+  position: relative;
+  padding: 10px 8px;
+  width: 175px;
+  color: rgb(0,0,0);
+  background: rgb(197, 187, 187);
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  right: -230px;
+  top: -224px;
+
+}.btn3:hover{
+
+  background: rgb(9, 243, 114);
+  transition: background 1s;
+}
+.btn4{
+
+  font-family: monospace;
+  position: relative;
+  padding: 10px 8px;
+  width: 195px;
+  color: rgb(0,0,0);
+  background: rgb(197, 187, 187);
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  right: -760px;
+  top: -328px;
+
+}.btn4:hover{
+
+  background: rgb(9, 243, 114);
+  transition: background 1s;
+
+}
+.btn5{
+
+  font-family: monospace;
+  position: relative;
+  padding: 10px 8px;
+  width: 195px;
+  color: rgb(0,0,0);
+  background: rgb(197, 187, 187);
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  right: -995px;
+  top: -363px;
+
+}.btn5:hover{
+
+  background: rgb(9, 243, 114);
+  transition: background 1s;
+
+}
+form{
+
+    position: absolute;
+    top: 50%;
+    right: 50;
+
+   
+}footer {
+  background-color: rgb(10, 10, 10);
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  bottom: 0;
+}.RESUMO{
+
+  position: relative;
+  font-family: sans-serif;
+  color: white;
+  font-size: 10px;
+  top: 600px;
+  right: -1450px;
+  opacity: 0.8;
+
+}.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color:white
+  }
+  
+  .social-icons a i {
+    font-size: 15px;
+  }.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}.contact-info h3{
+ 
+    font-family: monospace;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    top: 10px;
+  }.social-media h3{
+
+    font-family: monospace;
+    margin-bottom: 20px;
+    color: #fff;
+
+  }.contact-info p {
+
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+    font-family: Noto Sans, sans-serif;
+    color: #fff;
+    line-height: 1.5
+    
+    
+  }
+  
+  .social-media ul {
+    list-style: none;
+    margin: 30;
+    padding: 0;
+    display: flex;
+  }
+  
+  .social-media li {
+    margin-right: 10px;
+  }
+  
+  .social-media a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    background-color: #666;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .social-media {
+      margin-top: 20px;
+    }
+    
+    .social-media ul {
+      justify-content: center;
+    }
+    
+    .social-media li {
+      margin-right: 10px;
+    }
+  }.copyright{
+
+      position: relative;
+      top: 10px;
+      color: #fff;
+      font-family: Noto Sans, sans-serif;
+      font-size: 10px;
+  }
